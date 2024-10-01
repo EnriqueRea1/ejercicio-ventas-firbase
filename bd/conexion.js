@@ -8,9 +8,15 @@ admin.initializeApp({
 const proyecto=admin.firestore();
 
 const usuarios=proyecto.collection("proyecto1");
+const productos=proyecto.collection("productos");
+const ventas=proyecto.collection("ventas");
+
+
 
 //console.log(usuarios);
 
 module.exports={
-    usuarios
+    usuarios,
+    productos,
+    ventas
 }

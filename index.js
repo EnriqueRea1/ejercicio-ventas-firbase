@@ -1,10 +1,10 @@
 const express = require("express");
-const usuariosRutas = require("./rutas/rutasUsuarios");
+const Rutas = require("./rutas/rutasUsuarios");
 
 const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use("/", usuariosRutas);
+app.use("/", Rutas);
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>{
